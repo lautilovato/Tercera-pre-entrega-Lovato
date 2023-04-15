@@ -3,12 +3,12 @@
 {% load static %}
 
 {% block titulo %}
-    <h1> Bienvenidos Estudiantes </h1>
+    <h1> Apartado de Estudiantes </h1>
 {% endblock %}
 
 {% block contenido_que_cambia %}
     
-    <h1>Lista de estudiantes</h1>
+    <h1>Registrar estudiante</h1>
 
     <form action="" method="post">
         {% csrf_token %}
@@ -20,6 +20,7 @@
 
     <table>
         <thead>
+            <h1>Lista de estudiantes</h1>
             <tr>
                 <th> ID </th>
                 <th> Nombre </th>

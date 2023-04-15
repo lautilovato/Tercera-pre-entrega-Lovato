@@ -4,10 +4,11 @@
 
 {% block titulo %}
     <h1> Apartado de cursos </h1>
+    <a class="navbar-brand" href="{% url 'busqueda_comision' %}">Buscar Comisión</a>
 {% endblock %}
 
 {% block contenido_que_cambia %}
-    <h1>Lista de cursos</h1>
+    <h1>Registrar curso</h1>
     
     <form action="" method="post">
         {% csrf_token %}
@@ -19,6 +20,7 @@
 
     <table>
         <thead>
+            <h1>Lista de cursos</h1>
             <tr>
                 <th> ID </th>
                 <th> Nombre </th>

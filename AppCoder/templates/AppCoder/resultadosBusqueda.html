@@ -3,26 +3,24 @@
 {% load static %}
 
 {% block titulo %}
-<h1 class="mb-5">resultados de la busqueda de cursos</h1>
+    <h1 class="mb-5">BUSQUEDA DE CURSOS</h1>
 {% endblock %}
 
 {% block contenido_que_cambia %}
 
-{% if cursos %}
+    {% if cursos %}
 
-<h2>LISTADO DE CURSOS</h2>
-{% for curso in cursos %}
+    {% for curso in cursos %}
 
-<h3>{{ curso.nombre }} - {{ curso.comision }}</h3>
+    <h3> Busqueda exitosa: {{ curso.nombre }} - {{ curso.comision }}</h3>
 
-{% endfor %}
+    {% endfor %}
 
-{% else %}
+    {% else %}
 
-<h2>NO HAY CURSOS</h2>
+    <h2>Esta comision no existe.</h2>
 
-{% endif %}
-
+    {% endif %}
 
 
 {% endblock %}

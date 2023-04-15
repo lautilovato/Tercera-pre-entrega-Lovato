@@ -97,4 +97,4 @@ def buscar(request):
         cursos= Curso.objects.filter(comision__icontains=comision)#buscar otros filtros en la documentacion de django
         return render(request, "AppCoder/resultadosBusqueda.html", {"cursos": cursos})
     else:
-        return render(request, "AppCoder/busquedaComision.html", {"mensaje": "Che Ingresa una comision para buscar!"})
+        return render(request, "AppCoder/busquedaComision.html", {"mensaje": "Esta comision no existe."})
